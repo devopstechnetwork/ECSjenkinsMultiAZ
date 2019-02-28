@@ -11,9 +11,18 @@ variable "region" {
   default = "us-east-1"
 }
 
+variable "max_subnet_count" {
+  default     = 0
+  description = "Sets the maximum amount of subnets to deploy.  0 will deploy a subnet for every availablility zone within the region"
+}
+
+variable "vpc_id" {
+  type        = "string"
+  description = "VPC ID where subnets will be created "
+}
 variable "availability_zone" {
   description = "The availability zone"
-  default = "us-east-1b"
+  default = "us-east-1a" "us-east-1b"
 }
 
 variable "ecs_cluster_name" {
