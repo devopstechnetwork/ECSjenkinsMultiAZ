@@ -22,7 +22,7 @@ variable "vpc_id" {
 }
 variable "availability_zone" {
   description = "The availability zone"
-  default = "us-east-1a" "us-east-1b"
+  default = ["us-east-1a", "us-east-1b"]
 }
 
 variable "ecs_cluster_name" {
@@ -33,9 +33,9 @@ variable "ecs_cluster_name" {
 variable "amis" {
   description = "Which AMI to spawn. Defaults to the AWS ECS optimized images."
   default = {
-    us-east-1 = "ami-8f7687e2"
-    us-west-1 = "ami-bb473cdb"
-    us-west-2 = "ami-84b44de4"
+    us-east-1 = "ami-d61027ad"
+    us-west-1 = "ami-514e6431"
+    us-west-2 = "ami-c6f81abe"
     eu-west-1 = "ami-4e6ffe3d"
     eu-central-1 = "ami-b0cc23df"
     ap-northeast-1 = "ami-095dbf68"
