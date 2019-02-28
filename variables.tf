@@ -6,7 +6,7 @@ variable "secret_key" {
   description = "The AWS secret key."
 }
 
-variable "region" {
+variable "aws_region" {
   description = "The AWS region to create resources in."
   default = "us-east-1"
 }
@@ -18,7 +18,7 @@ variable "max_subnet_count" {
 
 variable "vpc_id" {
   type        = "string"
-  description = "VPC ID where subnets will be created "
+  description = "VPC ID of the existing VPC "
 }
 variable "availability_zone" {
   description = "The availability zone"
