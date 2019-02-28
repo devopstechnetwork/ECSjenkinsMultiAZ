@@ -4,22 +4,13 @@
     {
       "Effect": "Allow",
       "Action": [
-        "ecs:CreateCluster",
-        "ecs:DeregisterContainerInstance",
-        "ecs:DiscoverPollEndpoint",
-        "ecs:Poll",
-        "ecs:RegisterContainerInstance",
-        "ecs:StartTelemetrySession",
-        "ecs:Submit*",
-        "ecs:StartTask",
-        "ecs:ListClusters",
-        "ecs:DescribeClusters",
-        "ecs:RegisterTaskDefinition",
-        "ecs:RunTask",
-        "ecs:StopTask",
+        "ecs:*",
         "ecr:GetAuthorizationToken",
         "ecr:BatchCheckLayerAvailability",
         "ecr:GetDownloadUrlForLayer",
+        "elasticloadbalancing:Describe*",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
         "ecr:BatchGetImage"
       ],
       "Resource": "*"
