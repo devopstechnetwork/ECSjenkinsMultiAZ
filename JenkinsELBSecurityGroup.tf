@@ -13,6 +13,6 @@ resource "aws_security_group" "JenkinsELBSecurityGroup" {
   vpc_id="${aws_vpc.default.id}"
 
   tags {
-    Name = "Web Server SG"
+    Name = "JenkinsELBSecurityGroup"
   }
 }
